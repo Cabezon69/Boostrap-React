@@ -18,9 +18,10 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   </head>
   <body>
-    <div id="like_button_container"></div>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
@@ -417,7 +418,19 @@
         </div>
       </div>
     </section>
+     <!-- Mapa-->
+    <div class="py-5">
+      <div class="container">
+        <h2 class="display-4 fw-bolder text-center my-2">Dónde nos encontramos</h1>
+
+        
+    <div class="text-center" id="mapa"></div>
+      
+      </div>
+    </div>
     <!-- Footer-->
+    <div class="text-center" id="audio"></div>
+
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">
@@ -428,16 +441,8 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <!-- Cargamos nuestro componente de React. -->
-    <script src="like_button.js"></script>
+    <script src="../js/map.js"></script>
+    <script src="../js/audio.js"></script>
+
   </body>
 </html>
